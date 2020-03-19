@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>User list</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+      a {
+        cursor: pointer;
+      }
+      table {
+        margin-top: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>User list</h2>
+    
+      <form id="form" name="userForm">
+        <input type="hidden" name="id" value="0">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input class="form-control" name="name">
+        </div>
+        <div class="form-group">
+          <label for="age">Age:</label>
+          <input class="form-control" name="age">
+        </div>
+        <div class="panel-body">
+
+          <button type="submit" class="btn btn-sm btn-primary">Save</button>
+          <a id="reset" class="btn btn-sm btn-primary">Reset</a>
+        </div>
+      </form>
+  
+      <table class="table table-condensed table-stripted table-bordered">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Update/delete</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+
+    </div>
+    
+
+    <script src="script.js"></script>
+  </body>
+</html>
